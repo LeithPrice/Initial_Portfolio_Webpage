@@ -1,46 +1,53 @@
-  
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 * {
     box-sizing: border-box;
   }
 
-
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
+.image {
+    background-color: $card-color;
+    width:100%;
+    padding: 5px;
   }
  
-  body {
-    font-family: Arial;
+body {
     padding: 20px;
-    background-image:url(/images/backgroundimage1.jpg);
+    background-image: url(/images/backgroundimage1.jpg);
+    font-family: $font;
   }
   
-  .header {
-    padding: 10px;
-    font-size: 40px;
+.header {
+    padding: 1px;
+    font-size: 70px;
     text-align: center;
-    color: black;
-    background-color: lightskyblue;
-
-    width: Auto;
+    background-color: $header-color;
+    width: 75%;
     margin:auto;
+    border-radius: 20px;
+    border-width: 20px;
   }
   
-  .container {   
+.container {   
     display:flex;
     flex-wrap:wrap;
 
 }
 .card {
-    background-color: white;
+    background-color: $container-color;
     padding: 20px;
     flex:20%;
+    margin:10px;
+    border-radius: 20px;
+    border-width: 20px;
  }
 
 @media screen and (max-width:992px){
     .card{
         flex:50%;
+    }
+    .header{
+        font-size:50px;
+        width:100%;
     }
   }
 @media screen and (max-width:600px){
@@ -49,29 +56,35 @@
     }
 }
   
-  ul.topnav {
+ul.topnav {
     list-style-type: none;
     margin: 10;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: $navbar-background;
+    border-radius: 20px;
+    border-width: 2px;  
   }
   
-  ul.topnav li {float: center;}
+ul.topnav li {float: left;}
   
-  ul.topnav li a {
+ul.topnav li a {
     display: block;
-    color: white;
+    color: $navbar-text-color;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: $font;
   }
   
-  ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li a:hover:not(.active) {background-color: $navbar-hover;}
   
-  ul.topnav li a.active {background-color: #04AA6D;}
+ul.topnav li a.active {background-color: $navbar-active;}
   
   
+@media screen and (max-width: 600px) {
+    ul.topnav li {float: none;}
+    }
 
 .footer {
     position: fixed;

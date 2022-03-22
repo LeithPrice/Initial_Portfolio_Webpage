@@ -1,27 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 * {
   box-sizing: border-box;
 }
 
-.fakeimg {
-  background-color: #aaa;
+.image {
+  background-color: #fe4a49;
   width: 100%;
-  padding: 20px;
+  padding: 5px;
 }
 
 body {
-  font-family: Arial;
   padding: 20px;
   background-image: url(/images/backgroundimage1.jpg);
+  font-family: "Fredoka One", cursive;
 }
 
 .header {
-  padding: 10px;
-  font-size: 40px;
+  padding: 1px;
+  font-size: 70px;
   text-align: center;
-  color: black;
-  background-color: lightskyblue;
-  width: Auto;
+  background-color: #fe4a49;
+  width: 75%;
   margin: auto;
+  border-radius: 20px;
+  border-width: 20px;
 }
 
 .container {
@@ -30,14 +32,22 @@ body {
 }
 
 .card {
-  background-color: white;
+  background-color: #b4ebca;
   padding: 20px;
   flex: 20%;
+  margin: 10px;
+  border-radius: 20px;
+  border-width: 20px;
 }
 
 @media screen and (max-width: 992px) {
   .card {
     flex: 50%;
+  }
+
+  .header {
+    font-size: 50px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -50,11 +60,13 @@ ul.topnav {
   margin: 10;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #fed766;
+  border-radius: 20px;
+  border-width: 2px;
 }
 
 ul.topnav li {
-  float: center;
+  float: left;
 }
 
 ul.topnav li a {
@@ -63,16 +75,22 @@ ul.topnav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: "Fredoka One", cursive;
 }
 
 ul.topnav li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #009fb7;
 }
 
 ul.topnav li a.active {
-  background-color: #04AA6D;
+  background-color: #fe4a49;
 }
 
+@media screen and (max-width: 600px) {
+  ul.topnav li {
+    float: none;
+  }
+}
 .footer {
   position: fixed;
   left: 0;
@@ -93,6 +111,12 @@ ul.topnav li a.active {
 
 .card {
   text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=indexstyle.css.map */
