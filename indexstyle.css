@@ -9,6 +9,12 @@
   padding: 5px;
 }
 
+img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
 body {
   padding: 20px;
   background-image: url(/images/backgroundimage1.jpg);
@@ -111,12 +117,6 @@ ul.topnav li a.active {
 
 .card {
   text-align: center;
-}
-
-img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
 }
 
 /*# sourceMappingURL=indexstyle.css.map */
