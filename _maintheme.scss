@@ -5,25 +5,25 @@
     box-sizing: border-box;
   }
 
-
+// image container perameters
 .image {
   background-color: $card-color;
   width:100%;
   padding: 5px;
  }
-
+// image file perameters
 img {
   width : 100%;
   height : 400px;
   object-fit:cover;
 }
-  
+// Main Body perameters
 body {
   padding: 20px;
   background-image: url(/images/backgroundimage1.jpg);
   font-family: $font;
 }
-  
+// In page title parameters
 .header {
   padding: 1px;
   font-size: 70px;
@@ -34,12 +34,13 @@ body {
   border-radius: 20px;
   border-width: 20px;
 }
-  
+// flexbox parameters for main container
 .container {   
   display:flex;
   flex-wrap:wrap;
 
 }
+// individual container parameters for all items included, inside the  main flexbox container
 .card {
   background-color: $container-color;
   padding: 20px;
@@ -48,7 +49,7 @@ body {
   border-radius: 20px;
   border-width: 20px;
 }
-
+// media control for screen size changes
 @media screen and (max-width:992px){
   .card{
     flex:50%;
@@ -58,13 +59,13 @@ body {
     width:100%;
   }
 }
-
+// media control for screen size changes
 @media screen and (max-width:600px){
   .container{
     flex-direction:column;
   }
 }
-  
+// navigation bar main container
 ul.topnav {
   list-style-type: none;
   margin: 10;
@@ -74,9 +75,9 @@ ul.topnav {
   border-radius: 20px;
   border-width: 2px;  
 }
-  
+//  instructions for navbar contents to be to the left
 ul.topnav li {float: left;}
-  
+// parameters for navbar contents  
 ul.topnav li a {
   display: block;
   color: $navbar-text-color;
@@ -85,16 +86,18 @@ ul.topnav li a {
   text-decoration: none;
   font-family: $font;
 }
-  
+// instructions for color change when mouse hovers over container 
 ul.topnav li a:hover:not(.active) {background-color: $navbar-hover;}
-  
+
+// instructions to change color of background for whatever page is current
 ul.topnav li a.active {background-color: $navbar-active;}
-  
+
+// media control for screen size changes
 @media screen and (max-width: 600px) {
   ul.topnav li {float: none;}
 }
 
-    
+// Parameters for footer container
 .footer {
   position: fixed;
   left: 0;
@@ -102,12 +105,12 @@ ul.topnav li a.active {background-color: $navbar-active;}
   width: 100%;
   text-align: center;
 } 
-
+// flexbox parameters for container in footer
 .contact_bar{
   display:flex;
   justify-content: center;
 }
-
+// parameters for icon size
 .contact_bar a img{
   width:45px;
   height:45px;
